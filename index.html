@@ -11,60 +11,61 @@
 <body>
     <div id="wrapper">
 
-        <form action="index.html" method="GET">
+        <form action="index.html" method="GET" novalidate>
             <div class="inputGroup">
                 <label for="username">Brugernavn</label>
-                <input type="text" name="username" id="username">
+                <input type="text" name="username" id="username" required >
                 <span class="statusMessage username"></span>
             </div>
 
             <div class="inputGroup">
                 <label for="password">Adgangskode</label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="password" required >
                 <span class="statusMessage password"></span>
             </div>
 
             <div class="inputGroup">
                 <label for="fornavn">Fornavn</label>
-                <input type="text" name="fornavn" id="fornavn">
+                <input type="text" name="fornavn" id="fornavn" required >
                 <span class="statusMessage fornavn"></span>
             </div>
 
             <div class="inputGroup">
                 <label for="efternavn">Efternavn</label>
-                <input type="text" name="efternavn" id="efternavn">
+                <input type="text" name="efternavn" id="efternavn" required >
                 <span class="statusMessage efternavn"></span>
             </div>
 
             <div class="inputGroup">
                 <label for="adresse">Adresse</label>
-                <input type="text" name="adresse" id="adresse">
+                <input type="text" name="adresse" id="adresse" required >
                 <span class="statusMessage adresse"></span>
             </div>
 
             <div class="inputGroup">
                 <label for="by">by</label>
-                <input type="text" name="by" id="by">
+                <input type="text" name="by" id="by" required >
                 <span class="statusMessage by"></span>
             </div>
 
             <div class="inputGroup">
                 <label for="postnummer">postnummer</label>
-                <input type="number" name="postnummer" id="postnummer">
+                <input type="number" name="postnummer" id="postnummer" required >
                 <span class="statusMessage postnummer"></span>
             </div>
 
             <div class="inputGroup">
                 <label for="email">E-mail</label>
-                <input type="text" name="email" id="email">
+                <input type="text" name="email" id="email" required >
                 <span class="statusMessage email"></span>
             </div>
 
             <button type="submit">Registrer!</button>
         </form>
-        <script src="javascript.js"></script>
+    
 
     </div>
+    <script src="app.js" type="module"></script>
 </body>
 
 </html>
